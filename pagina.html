@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img id="logoCotuca" src="imagens/logoCotuca.png" alt="logoCotuca">
+
+        <h1 id="title">Redes sem Fio e Redes Móveis</h1>
+
+        <img id="logoUnicamp" src="imagens/logoUnicamp.png" alt="logoUnicamp">
+    </header>
+
+    <menu id="menu">
+        <ul id="list">
+            <li>Autores</li>
+            <li>Cotuca</li>
+            <li>Redes</li>
+            <li>Referências</li>
+        </ul>
+    </menu>
+    
+
+    <script>
+        function mudar(){
+            
+            let txt = document.getElementById("a").textContent
+            if (txt == "Redes"){
+                document.getElementById("a").innerHTML = "cabos"
+            }
+            else{
+                document.getElementById("a").textContent = "Redes"
+            }
+            
+        }
+    </script>
+</body>
+</html>
