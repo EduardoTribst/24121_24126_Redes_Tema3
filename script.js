@@ -14,6 +14,8 @@ function mudar(novaPagina){
     else if (novaPagina == "Referencias"){
         location.replace("https://eduardotribst.github.io/24121_24126_Redes_Tema3/referencias.html")
     }
-    
-    
+}
+
+function voltar(){
+    location.replace("https://eduardotribst.github.io/24121_24126_Redes_Tema3/index.html")
 }
