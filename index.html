@@ -17,26 +17,14 @@
 
     <menu id="menu">
         <ul id="list">
-            <li>Autores</li>
-            <li>Cotuca</li>
-            <li>Redes</li>
-            <li>Referências</li>
+            <li onclick="mudar('Autores')">Autores</li>
+            <li onclick="mudar('OProjeto')">O Projeto</li>
+            <li onclick="mudar('Redes')">Redes</li>
+            <li onclick="mudar('Referencias')">Referências</li>
         </ul>
     </menu>
     
 
-    <script>
-        function mudar(){
-            
-            let txt = document.getElementById("a").textContent
-            if (txt == "Redes"){
-                document.getElementById("a").innerHTML = "cabos"
-            }
-            else{
-                document.getElementById("a").textContent = "Redes"
-            }
-            
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
