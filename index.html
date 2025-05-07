@@ -8,34 +8,62 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 
+    <!-- Fonte Lexend -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Fonte Cal Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+
+    <!-- Fonte Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="https://prefeitura.unicamp.br/cardapio/">
-            <img id="logoCotuca" src="imagens/logoCotuca.png" alt="logoCotuca">
-        </a>
-
-        <div id="divTitulo">
-            <h1 id="title">Redes sem Fio e Redes Móveis</h1>
+        <div id="esquerda">
+            <a href="https://prefeitura.unicamp.br/cardapio/">
+                <img id="logoCotuca" src="imagens/logoCotuca.png" alt="logoCotuca">
+            </a>
+            <a href="https://unicamp.br/">
+                <img id="logoUnicamp" src="imagens/logoUnicamp.png" alt="logoUnicamp">
+            </a>
+            <div id="divTitulo">
+                <h1 id="title">Redes sem Fio e Redes Móveis</h1>
+            </div>
         </div>
-
-        <a href="https://unicamp.br/">
-            <img id="logoUnicamp" src="imagens/logoUnicamp.png" alt="logoUnicamp">
-        </a>
-
+    
+        <div id="menu">
+            <ul id="list">
+                <li onclick="mudar('Autores')" class="liMenu">Autores</li>
+                <li onclick="mudar('Referencias')" class="liMenu">Referências</li>
+            </ul>
+        </div>
     </header>
 
-    <div id="menu">
-        <ul id="list">
-            <li onclick="mudar('Autores')" class="liMenu">Autores</li>
-            <li onclick="mudar('OProjeto')" class="liMenu">O Projeto</li>
-            <li onclick="mudar('Redes')" class="liMenu">Redes</li>
-            <li onclick="mudar('Referencias')" class="liMenu">Referências</li>
+    <div id="separador">
+        <ul id="conteudos">
+            <li class="liConteudo">Características</li>
+            <li class="liConteudo">Tipos de Rede</li>
+            <li class="liConteudo">Padrões</li>
+            <li class="liConteudo">Soluções</li>
+            <li class="liConteudo">Tendências</li>
         </ul>
     </div>
-    
+<!-- 
+    <div id="caracteristicas">
+        <div id="resumo">
+            <h1 id="tituloConteudo">Características</h1>
+            <p id="texto">Texto muito legal sobre as caracteristicas das redes sem fio</p>
+        </div>
+
+        <div id="tiposSinal">
+            <h2>Tipos de Sinal</h2>
+        </div>
+    </div> -->
 </body>
 </html>
