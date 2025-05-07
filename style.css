@@ -23,12 +23,12 @@ body{
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     
 }
 
 #menu{
     width: 50rem;
-    
+    background-color: aqua;
     margin: auto;
 }
