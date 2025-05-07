@@ -3,34 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Início</title>
+
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <a href="https://prefeitura.unicamp.br/cardapio/">
-        <img id="logoCotuca" src="imagens/logoCotuca.png" alt="logoCotuca">
+            <img id="logoCotuca" src="imagens/logoCotuca.png" alt="logoCotuca">
         </a>
 
-        <h1 id="title">Redes sem Fio e Redes Móveis</h1>
-
+        <div id="divTitulo">
+            <h1 id="title">Redes sem Fio e Redes Móveis</h1>
+        </div>
 
         <a href="https://unicamp.br/">
-        <img id="logoUnicamp" src="imagens/logoUnicamp.png" alt="logoUnicamp">
+            <img id="logoUnicamp" src="imagens/logoUnicamp.png" alt="logoUnicamp">
         </a>
 
     </header>
 
-    <menu id="menu">
+    <div id="menu">
         <ul id="list">
-            <li onclick="mudar('Autores')">Autores</li>
-            <li onclick="mudar('OProjeto')">O Projeto</li>
-            <li onclick="mudar('Redes')">Redes</li>
-            <li onclick="mudar('Referencias')">Referências</li>
+            <li onclick="mudar('Autores')" class="liMenu">Autores</li>
+            <li onclick="mudar('OProjeto')" class="liMenu">O Projeto</li>
+            <li onclick="mudar('Redes')" class="liMenu">Redes</li>
+            <li onclick="mudar('Referencias')" class="liMenu">Referências</li>
         </ul>
-    </menu>
+    </div>
     
-
-    <script src="script.js"></script>
 </body>
 </html>
