@@ -21,6 +21,7 @@ header {
 body{
     margin: 0;
     padding: 0;
+    
 }
 
 #title{
@@ -93,3 +94,14 @@ body{
     cursor: pointer;
 }
 
+.tituloSubtopico{
+    font-weight: bold;
+}
+
+.textoSubtopico{
+    font-weight: lighter;
+}
+
+div{
+    margin-left: 15px;
+}
