@@ -17,7 +17,6 @@ header {
     padding: 0 1rem;
 }
 
-
 body{
     margin: 0;
     padding: 0;
@@ -112,4 +111,70 @@ body{
 
 .conteudo div h3{
     margin-left: 15px;;
+}
+
+.liTitulo {
+    font-size: 15px;
+    font-family: "Cal Sans";
+    color: white;
+}
+
+#containerConteudo {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.coluna-esquerda {
+    width: 50%;
+    padding: 1rem;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+  
+#coluna-direita {
+    width: 50%;
+    box-sizing: border-box;
+}
+  
+.conteudo-menor, .conteudo-extra {
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.conteudo-extra {
+    margin-top: 1rem;
+} 
+
+.tituloSubtopico {
+    color: rgb(0, 0, 0);
+    font-family: "Cal Sans";
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 1rem;
+}
+
+.titulo {
+    font-family: "Lexend Deca";
+    font-size: 25px;
+    color: rgb(196, 0, 0);
+}
+
+.tituloPrincipal {
+    font-family: "Lexend Deca";
+    color: rgb(90, 0, 0);
+    font-size: 35px;
+    text-align: center;
+}
+
+.textoSubtopico {
+    font-family: "Roboto Condensed";
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+#alinhar {
+    margin-left: 1rem;
 }
