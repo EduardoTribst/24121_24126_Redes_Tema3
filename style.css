@@ -178,3 +178,7 @@ body{
 #alinhar {
     margin-left: 1rem;
 }
+
+.palavrasDestacadas{
+    font-weight: bolder;
+}
