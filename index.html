@@ -339,20 +339,60 @@
                 
                 <div>
                     <h2 class="tituloSubtopico">Tipos de sinal</h2>
-                    <h3 class="textoSubtopico">Direcional e não direcional</h3>
+                    <h3 class="textoSubtopico">Sinal não direcional: 
+                        É um sinal emitido em todas as direções ao redor de sua antena, como um círculo ao redor do ponto de transmissão. 
+                        É ideal para cobrir uma área ampla e conectar múltiplos dispositivos ao redor. 
+                        Mas, como o sinal é distribuído igualmente, parte da energia é desperdiçada onde não há necessidade. 
+                        É usado comumente em roteadores wi-fi comuns.</h3>
+                    <h3 class="textoSubtopico">Sinal direcional: 
+                        É o sinal transmitido em uma única direção específica, concentrado em um feixe mais estreito. 
+                        Tem um alcance maior e mais forte na direção apontada, com menos interferência. 
+                        Porém, cobre uma área menor, e caso o dispositivo saía da direção apontada, pode perder a conexão. 
+                        É bastante usado em antenas parabólicas.
+                    </h3>
                 </div>
 
                 <div>
                     <h2 class="tituloSubtopico">Comparação entre sinais</h2>
-                    <h3 class="textoSubtopico">SINAL1 != SINAL2</h3>
+                    <h3 class="textoSubtopico">Devemos concentrar nossa atenção na camada de enlace ao procurarmos diferenças importantes 
+                        entre redes com fio e sem fio. Algumas diferenças notáveis são:
+                        <ul>
+                            <li class="elementosLi">Redução da força do sinal</li>
+                            <li class="elementosLi">Interferência de outras fontes</li>
+                            <li class="elementosLi">Propagação multivias</li>
+                        </ul>
+                        Em uma rede sem fio, estaremos sujeitos a muito mais interferências e erros do que se considerarmos uma rede cabeada.
+                        A relação sinal-ruído, chamada de SNR (signal-to-noise ratio) é uma medida relativa da potência do sinal recebido 
+                        (ou seja, a informação sendo transmitida) e o ruído. 
+                        Uma SNR maior facilita ainda mais para o destinatário extrair o sinal transmitido de um ruído de fundo. 
+                        A BER (bit error rate) é, em termos simples, a probabilidade de um bit transmitido ser recebido 
+                        com erro no destinatário.
+                        </h3>
+                </div>
+
+                <div>
+                    <h2 class="tituloSubtopico">Estação escondida e exposta</h2>
+                    <h3 class="textoSubtopico">A estação escondida ocorre quando duas estações (por exemplo, A e C) não conseguem se "ver", 
+                        mas ambas estão dentro do alcance de uma terceira estação (B), que é o destino comum. Como A e C não detectam o sinal
+                        uma da outra, podem tentar transmitir dados para B ao mesmo tempo, causando colisão de pacotes no receptor.
+                        Uma solução comum é o so de protocolos como RTS/CTS (Request to Send / Clear to Send), 
+                        que ajudam a coordenar o envio e evitar colisões.
+                    </h3>
+                    <h3 class="textoSubtopico">A estação exposta é quando uma estação deixa de transmitir desnecessariamente, 
+                        achando que causará interferência, mesmo que não causaria. A estação escuta o canal ocupado por uma transmissão vizinha e 
+                        se abstém de transmitir, apesar de não haver interferência real com o destino pretendido, o que reduz a eficiência da rede. 
+                        O canal fica ociosamente desperdiçado.
+                    </h3>
                 </div>
                 
                 <div>
                     <h2 class="tituloSubtopico">Aplicabilidade</h2>
-                    <h3 class="textoSubtopico">NENHUMA</h3>    
+                    <h3 class="textoSubtopico">As redes sem fio são amplamente utilizadas por oferecerem mobilidade e praticidade em 
+                        diversos contextos. Em casas, empresas, escolas e hospitais, elas facilitam a conexão entre dispositivos e melhoram 
+                        a comunicação. Também são essenciais em locais públicos e regiões remotas, levando internet onde o cabeamento 
+                        não é viável. Sua aplicação é fundamental para uma sociedade cada vez mais conectada e digital.
+                    </h3>    
                 </div>
-
-                
 
             </div>
 
