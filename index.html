@@ -308,13 +308,54 @@
                 <div>
                     <h2 class="tituloSubtopico">Qualidade de Serviço</h2>
                     <h3 class="textoSubtopico"> bearers/QoS-flows, classes de tráfego (GRB vc. non-GBR)</h3>
+                    
+                    <h3 class="textoSubtopico"> 
+                        QoS (Quality of Service) refere-se à capacidade da rede de garantir desempenho previsível para diferentes tipos de tráfego, controlando parâmetros como latência, jitter, perda de pacotes e largura de banda.
+                        Nas redes LTE e 5G, o conceito de bearers (canais lógicos) ou QoS flows (fluxos com parâmetros definidos) é usado para distinguir os requisitos de diferentes serviços. Cada fluxo de dados recebe um tratamento específico de acordo com sua classe de tráfego:
+                        <ul>
+                            <li class="textoSubtopico"><span class="palavrasDestacadas">GBR (Guaranteed Bit Rate):</span> usada para aplicações que exigem taxa de transmissão constante e garantida, como chamadas VoLTE (voz sobre LTE) ou videoconferências. A rede reserva recursos para esses serviços.</li>
+                            <li class="textoSubtopico"><span class="palavrasDestacadas">Non-GBR (Non-Guaranteed Bit Rate):</span> usada para serviços com tráfego variável, como navegação web ou redes sociais. Não há reserva de largura de banda fixa, mas a rede tenta oferecer o melhor desempenho possível.</li>
+                        </ul>
+                        Essas classes são gerenciadas dinamicamente pela rede de acordo com políticas definidas pelo operador, levando em conta a carga atual, prioridade do serviço e perfil do usuário.
+                    </h3>
+                    
+
+
+
+
+
+
+
                 </div>
 
                 <div>
                     <h2 class="tituloSubtopico">Segurança</h2>
-                    <h3 class="textoSubtopico">Autenticação (SIM/AKA)</h3>
-                    <h3 class="textoSubtopico">Criptografia e integridade no ar (A5/x, SNOW, 128-EEA) </h3>
-                    <h3 class="textoSubtopico">Protecao do core(IPsec, HTTPS, TLS)</h3>
+                    <h3 class="textoSubtopico">
+                        O processo de autenticação garante que apenas usuários legítimos possam acessar a rede. Ele é baseado no cartão SIM (Subscriber Identity Module) e em protocolos como o AKA (Authentication and Key Agreement), que usam chaves armazenadas tanto no SIM quanto no servidor da operadora para 
+                        validar a identidade do assinante.
+                    </h3>
+
+                    <h3 class="textoSubtopico">
+                        A comunicação entre o dispositivo e a estação rádio-base é protegida por algoritmos de criptografia e verificação de integridade. Entre os mais utilizados:
+                    
+                        <ul>
+                            <li class="textoSubtopico"><span class="palavrasDestacadas">A5/x:</span> usado em redes GSM.</li>
+                            <li class="textoSubtopico"><span class="palavrasDestacadas">SNOW 3G:</span> usado em redes 3G.</li>
+                            <li class="textoSubtopico"><span class="palavrasDestacadas">128-EEA (EPS Encryption Algorithm) e 128-EIA (EPS Integrity Algorithm):</span> usados em redes 4G LTE e 5G, baseados em algoritmos como AES e ZUC.</li>
+                        </ul>
+
+                        Esses mecanismos evitam a interceptação de dados e a modificação maliciosa das mensagens transmitidas.
+                    </h3>
+
+                    <h3 class="textoSubtopico">
+                        Dentro da rede central, a proteção é reforçada com o uso de protocolos de segurança amplamente adotados na Internet:
+                        <ul>
+                            <li class="textoSubtopico"><span class="palavrasDestacadas">IPsec (Internet Protocol Security):</span> garante autenticação e criptografia no tráfego IP interno.</li>
+                            <li class="textoSubtopico"><span class="palavrasDestacadas">TLS (Transport Layer Security) e HTTPS (HTTP Secure):</span> usados para proteger serviços baseados em web, como interfaces de gerenciamento, serviços IMS e aplicações externas.</li>
+                        </ul>
+                        A combinação de autenticação forte, criptografia robusta e protocolos seguros garante que as redes móveis atendam aos padrões exigidos para comunicação pessoal, empresarial e crítica, como em veículos autônomos e sistemas de saúde conectados
+                    </h3>
+
                 </div>
                 
             </div>
