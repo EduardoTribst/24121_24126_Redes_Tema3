@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Lateral</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+#menu-toggle {
+  background: none;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #444;
+  padding-top: 60px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+#sidebar.show {
+  transform: translateX(0);
+}
+
+#sidebar button#close-menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#sidebar ul li {
+  padding: 15px;
+}
+
+#sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1;
+}
+
+#overlay.show {
+  display: block;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <button id="menu-toggle">☰ Menu</button>
+  </header>
+
+  <!-- Sobreposição (fundo escuro) -->
+  <div id="overlay" class="hidden"></div>
+
+  <!-- Menu lateral -->
+  <nav id="sidebar" class="hidden">
+
+    <button id="close-menu">✖</button>
+    <h1>cjoajc-sdc</h1>
+    
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Bem-vindo!</h1>
+    <p>Conteúdo da página...</p>
+  </main>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+const closeBtn = document.getElementById('close-menu');
+const sidebar = document.getElementById('sidebar');
+const overlay = document.getElementById('overlay');
+
+function openMenu() {
+  sidebar.classList.add('show');
+  overlay.classList.add('show');
+}
+
+function closeMenu() {
+  sidebar.classList.remove('show');
+  overlay.classList.remove('show');
+}
+
+toggleBtn.addEventListener('click', openMenu);
+closeBtn.addEventListener('click', closeMenu);
+overlay.addEventListener('click', closeMenu);
+
+  </script>
+</body>
+</html>
