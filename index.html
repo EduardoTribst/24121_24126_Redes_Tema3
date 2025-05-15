@@ -76,10 +76,6 @@
                 <h1 class="titulo">Introdução</h1>
                 <div>
                     <h2 class="tituloSubtopico">Definição e Motivação</h2>
-                    <h3 class="textoSubtopico"> 
-                    
-                        Mobilidade do Usuário, Cobertura em larga escala, serviços on the move(voz, dados, IOT)
-                    </h3>
                     <h3 class="textoSubtopico">
                         Dispositivos mantêm a conexão ativa mesmo quando o usuário se desloca, graças a mecanismos de handover que transferem sessão de uma célula ou ponto de acesso para outro
                         sem intervenção perceptível. Isso garante continuidade de chamadas de voz, streaming e outras aplicações sensíveis à interrupção.
@@ -98,8 +94,34 @@
                 </div>
 
                 <div>
-                    <h2 class="tituloSubtopico">Definição e Motivação</h2>
-                    <h3 class="textoSubtopico"> RAN (Radio Acess Network) + Core Network + Interfaces de borda(Internet, IMS)</h3>
+                    <h2 class="tituloSubtopico">Arquitetura de redes móveis</h2>
+                    <h3 class="textoSubtopico">
+                        A RAN é responsável pela comunicação sem fio entre os dispositivos móveis e a rede. Ela inclui as estações rádio-base (como torres de celular e antenas) e os controladores
+                        que gerenciam os recursos do espectro de rádio. A RAN realiza funções essenciais como codificação de sinal, modulação, controle de potência, gerenciamento de mobilidade 
+                        (handover) e multiplexação de canais. Em redes modernas, como o 4G LTE e o 5G, a RAN pode ser centralizada (C-RAN) ou distribuída, e em muitos casos, baseada em software
+                        (vRAN – virtual RAN).
+                    </h3>
+
+                    <h3 class="textoSubtopico">
+                        O Core Network(núcleo da rede) gerencia o tráfego, autenticação, mobilidade e os serviços dos usuários. No 4G, o core é baseado em EPC (Evolved Packet Core), enquanto no 5G utiliza-se o
+                        5GC (5G Core). Ele é composto por elementos como
+                        <ul>
+                            <li class="textoSubtopico">MME/AMF (Mobility Management Entity / Access and Mobility Function): gerencia a mobilidade e o estabelecimento da sessão.</li>
+                            <li class="textoSubtopico">SGW/UPF (Serving Gateway / User Plane Function): roteia os pacotes de dados.</li>
+                            <li class="textoSubtopico">PGW/SMF (Packet Gateway / Session Management Function): conecta a rede móvel à Internet e aplica políticas de qualidade de serviço (QoS).</li>
+                            <li class="textoSubtopico">HSS/UDM (Home Subscriber Server / Unified Data Management): banco de dados central com informações dos usuários e perfis de serviço.</li>
+                        </ul>
+                    </h3>
+
+                    <h3 class="textoSubtopico">
+                        A <span class="palavrasDestacadas">Rede Móvel</span> se conecta a redes externas e serviços através de interfaces de borda. Isso inclui:
+                        <ul>
+                            <li class="textoSubtopico">Internet pública, permitindo acesso a serviços web, aplicações em nuvem, redes sociais etc.</li>
+                            <li class="textoSubtopico">IMS (IP Multimedia Subsystem): uma arquitetura padronizada para entrega de serviços multimídia (voz sobre IP, videoconferência, mensagens instantâneas) sobre redes IP.</li>
+                            <li class="textoSubtopico">Redes corporativas ou privadas, no caso de aplicações empresariais ou soluções de IoT.</li>
+                        </ul>
+                        Essa arquitetura modular e escalável permite que as redes móveis suportem bilhões de dispositivos com diferentes requisitos de velocidade, latência, segurança e mobilidade, atendendo desde smartphones até sensores embarcados e veículos conectados.
+                    </h3>
                 </div>
             </div>
 
