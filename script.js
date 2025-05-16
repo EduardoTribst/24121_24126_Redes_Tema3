@@ -9,7 +9,7 @@ function openMenu() {
     overlay.classList.add('show');
   }
   
-  function closeMenu() {
+  function fecharMenu() {
     sidebar.classList.remove('show');
     overlay.classList.remove('show');
   }
