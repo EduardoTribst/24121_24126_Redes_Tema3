@@ -15,8 +15,8 @@ function openMenu() {
   }
   
   toggleBtn.addEventListener('click', openMenu);
-  closeBtn.addEventListener('click', closeMenu);
-  overlay.addEventListener('click', closeMenu);
+  closeBtn.addEventListener('click', fecharMenu);
+  overlay.addEventListener('click', fecharMenu);
 
 function mudar(novaPagina){
     
