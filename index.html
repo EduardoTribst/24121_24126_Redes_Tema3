@@ -357,25 +357,112 @@
 
                         <div>
                             <h2 class="tituloSubtopico">4G</h2>
-                            <h3 class="textoSubtopico">MME, HSS, SGW, PGW</h3>
+                            <h3 class="textoSubtopico">
+                                No 4G (LTE), o núcleo da rede foi totalmente redesenhado para ser mais eficiente, rápido e orientado a pacotes IP, abandonando a estrutura tradicional de comutação por circuitos usada no 2G e 3G. Esse novo núcleo é conhecido como Evolved Packet Core (EPC) e 
+                                é composto por vários elementos-chave, cada um com funções específicas.
+                            </h3>
+
+                            <h3 class="textoSubtopico">
+                                O MME (Mobility Management Entity) é responsável pelo controle da mobilidade dos usuários e pela sinalização. Ele cuida da autenticação do usuário, da troca de mensagens de controle entre o dispositivo e a rede, e da gestão das conexões quando o usuário se 
+                                desloca entre áreas de cobertura.
+                            </h3>
+
+                            <h3 class="textoSubtopico">
+                                O HSS (Home Subscriber Server) é o banco de dados central que armazena as informações dos assinantes, como identidade, autenticação, perfis de serviço e localização. Ele desempenha um papel similar ao HLR do 2G/3G, mas é mais integrado e avançado.
+                            </h3>
+
+                            <h3 class="textoSubtopico">
+                                Para o transporte de dados, temos o SGW (Serving Gateway) e o PGW (Packet Gateway). O SGW atua como um roteador intermediário que recebe os pacotes de dados das estações-base e os envia para o PGW. Ele também mantém o roteamento local durante a mobilidade 
+                                do usuário. O PGW, por sua vez, é a interface entre a rede 4G e a internet ou outras redes externas. Ele aplica políticas de qualidade de serviço (QoS), controla o tráfego e faz funções de NAT e filtragem de IP.
+                            </h3>
+
+                            <h3 class="textoSubtopico">
+                                Essa separação clara entre funções de controle (MME e HSS) e de dados (SGW e PGW) é uma das razões pelas quais o 4G oferece maior velocidade, menor latência e melhor eficiência na gestão de recursos de rede.
+                            </h3>
+
                         </div>
 
                         <div>
                             <h2 class="tituloSubtopico">5G</h2>
-                            <h3 class="textoSubtopico">MSC, HLR, VLR, SGSN/GGSN</h3>
+                            <h3 class="textoSubtopico">
+                                O 5G Core (5GC) substitui os elementos anteriores por funções mais modulares, flexíveis e orientadas a software. Alguns dos principais componentes são:
+                                <ul>
+                                    <li class="textoSubtopico"><span class="palavrasDestacadas">AMF (Access and Mobility Management Function):</span> substitui o MME do 4G. Gerencia o acesso e a mobilidade do usuário.</li>
+                                    <li class="textoSubtopico"><span class="palavrasDestacadas">SMF (Session Management Function):</span> cuida da criação, modificação e liberação das sessões de dados.</li>
+                                    <li class="textoSubtopico"><span class="palavrasDestacadas">UPF (User Plane Function):</span> substitui SGW/PGW, roteando os dados do usuário para a internet.</li>
+                                    <li class="textoSubtopico"><span class="palavrasDestacadas">AUSF (Authentication Server Function):</span> realiza a autenticação do usuário.</li>
+                                    <li class="textoSubtopico"><span class="palavrasDestacadas">UDM (Unified Data Management):</span> armazena dados de assinantes, substituindo o HSS.</li>
+                                    <li class="textoSubtopico"><span class="palavrasDestacadas">PCF (Policy Control Function):</span> define regras de QoS, cobrança e uso de rede.</li>
+                                    <li class="textoSubtopico"><span class="palavrasDestacadas">NSSF (Network Slice Selection Function):</span> seleciona a fatia de rede (network slice) adequada para cada serviço.</li>
+                                </ul>
+                            </h3>
                         </div>
                     </div>
                 </div>
 
                 <div>
                     <h2 class="tituloSubtopico">Sincronização e Roaming</h2>
-                    <h3 class="textoSubtopico"> MAP CAP Diameter</h3> 
+                    <h3 class="textoSubtopico">
+                        Na arquitetura de redes móveis, sincronização e roaming são fundamentais para garantir que os usuários possam se mover entre diferentes áreas de cobertura — e até entre redes de diferentes operadoras — sem perder a conexão e com continuidade nos serviços de 
+                        voz, dados e autenticação. Para permitir isso, diferentes protocolos de sinalização são utilizados, sendo os principais MAP e CAP em 2G/3G e Diameter em 4G/5G
+                    </h3> 
+
+                    <h3 class="textoSubtopico">
+                        O MAP (Mobile Application Part) é um protocolo da arquitetura SS7 (Sistema de Sinalização 7), usado principalmente em redes 2G e 3G. Ele é responsável por:
+                        <ul>
+                            <li class="textoSubtopico">Trocar informações entre elementos como HLR, VLR, MSC e SGSN.</li>
+                            <li class="textoSubtopico">Realizar autenticação de usuários, atualização de localização e serviços suplementares (como chamadas em espera ou conferência).</li>
+                            <li class="textoSubtopico">Permitir o roaming internacional, transferindo dados de um assinante entre redes diferentes.</li>
+                        </ul>
+                    </h3>
+
+                    <h3 class="textoSubtopico">
+                        O CAP (CAMEL Application Part) é usado junto com o MAP para suportar serviços inteligentes nas redes móveis, especialmente em roaming. Ele permite, por exemplo:
+                        <ul>
+                            <li class="textoSubtopico">Aplicar regras de cobrança em tempo real.</li>
+                            <li class="textoSubtopico">Ativar serviços personalizados (como limites de uso, chamadas gratuitas, etc).</li>
+                            <li class="textoSubtopico">Interagir com plataformas de serviços pré-pagos mesmo quando o usuário está em outra rede.</li>
+                        </ul>
+                    </h3>
+
+                    <h3 class="textoSubtopico">
+                        O Diameter é um protocolo mais moderno, utilizado principalmente em redes 4G (LTE) e 5G. Ele substitui o MAP na nova arquitetura IP e é usado para:
+                        <ul>
+                            <li class="textoSubtopico">Autenticação, autorização e contabilização (AAA).</li>
+                            <li class="textoSubtopico">Comunicação entre o MME e o HSS, ou entre o AMF e o UDM, no 5G.</li>
+                            <li class="textoSubtopico">Garantir que o usuário continue autenticado e com acesso aos seus serviços mesmo durante o roaming em redes modernas.</li>
+                        </ul>
+                    </h3>
+
+                    <h3 class="textoSubtopico">
+                        Todos esses protocolos garantem que o usuário possa se mover livremente entre regiões e operadoras, mantendo acesso seguro, contínuo e controlado aos serviços da rede móvel.
+                    </h3>
+
                 </div>
 
                 <div>
-                    <h2 class="tituloSubtopico">Mobilidade IpP</h2>
-                    <h3 class="textoSubtopico"> Mobile IP/ PMIPv6 vs. nativa de mobilidade (4G/5G)</h3>
-                    <h3 class="textoSubtopico"> Técnicas de localização e paging</h3> 
+                    <h2 class="tituloSubtopico">Mobilidade IP</h2>
+                    <h3 class="textoSubtopico"> 
+                        A mobilidade IP permite que um dispositivo, como um celular, continue conectado à internet mesmo enquanto se move entre diferentes áreas de cobertura. Antigamente, isso era feito com soluções como o Mobile IP e o PMIPv6, que garantiam que o endereço IP do 
+                        dispositivo não mudasse durante o deslocamento. No caso do Mobile IP, o próprio dispositivo cuidava disso. Já com o PMIPv6, essa função foi passada para a rede, facilitando a conexão.
+                    </h3>
+
+                    <h3 class="textoSubtopico">
+                        Com a chegada do 4G e do 5G, a mobilidade passou a ser um recurso nativo 
+                        da rede, funcionando de forma automática e mais eficiente. Isso significa que a rede consegue manter a conexão do usuário ativa mesmo quando ele muda de área, como ao sair de uma antena e entrar no alcance de outra (o que chamamos de handover), sem que a 
+                        navegação ou a chamada seja interrompida.
+                    </h3>
+
+                    <h3 class="textoSubtopico">
+                        Além disso, a rede usa técnicas de localização e paging para saber onde o dispositivo está e economizar energia. Quando o celular está em repouso, a rede não precisa saber sua posição exata o tempo todo. Ela só 
+                        envia um sinal de busca quando for necessário entregar uma chamada ou dados.
+                    </h3>
+
+                    <h3 class="textoSubtopico">
+                        Esses recursos tornam a experiência do usuário muito mais estável e contínua, mesmo em movimento.
+                    </h3>
+                    
+                    
                 </div>
             </div>
 
