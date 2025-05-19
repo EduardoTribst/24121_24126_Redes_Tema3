@@ -268,12 +268,57 @@
                 <h1 class="titulo">Componentes e Protocolos Chave</h1>
                 <div>
                     <h2 class="tituloSubtopico">RAN</h2>
-                    <h3 class="textoSubtopico"> BTS/ eNodeB/ gNodeB</h3>
-                    <div>
-                        <h2 class="tituloSubtopico">Interface aérea</h2>
-                        <h3 class="textoSubtopico"> GTP-U, RRC, PDCP, RLC, MAC</h3>
-                    </div>
+
+
+                    <h3 class="textoSubtopico">
+                        Na arquitetura das redes móveis, a RAN (Radio Access Network) — ou Rede de Acesso por Rádio — é a parte responsável por fazer a ponte entre os dispositivos dos usuários (como celulares, sensores e modems) e o núcleo da rede.
+                    </h3>
+
+                    <h3 class="textoSubtopico">
+                        A RAN cuida da transmissão e recepção de sinais de rádio, gerenciando conexões, mobilidade, alocação de recursos e qualidade do sinal. Dentro da RAN, encontramos equipamentos essenciais, que variam conforme a geração da rede:
+                        <ul>
+                            <li class="textoSubtopico">BTS (Base Transceiver Station): usada em redes 2G, é responsável por transmitir e receber sinais de rádio e se conectar com a central de comutação.</li>
+                            <li class="textoSubtopico">eNodeB (Evolved Node B): é a estação-base usada no 4G (LTE). Ela reúne funções que antes eram divididas em vários elementos da rede, como controle de mobilidade, enfileiramento de pacotes e codificação do sinal, atuando de forma mais inteligente e independente.</li>
+                            <li class="textoSubtopico">gNodeB (Next Generation Node B): é a estação-base do 5G, que se conecta ao núcleo 5G (5G Core) e é compatível com novas tecnologias como beamforming, massive MIMO e fatiamento de rede (network slicing).</li>
+                        </ul>
+                    </h3>
+
+                    <h3 class="textoSubtopico">
+                        Esses componentes são os "pontos de entrada" da rede, onde o sinal do usuário é transmitido, processado e encaminhado para o restante da infraestrutura. São fundamentais para garantir cobertura, velocidade e qualidade na comunicação móvel.
+                    </h3>
                     
+                    
+                </div>
+
+                <div>
+                    <h2 class="tituloSubtopico">Interface aérea</h2>
+
+                    <h3 class="textoSubtopico">
+                        A interface aérea é o canal de comunicação entre o dispositivo móvel (como um celular) e a estação-base da rede (como a eNodeB no 4G ou a gNodeB no 5G). Para garantir que os dados sejam transmitidos corretamente por esse canal sem fio, a comunicação é dividida em camadas, cada uma com seu papel 
+                        específico. Entre os principais protoclolos presentes estão GTP-U, RRC, PDCP, RLC e MAC.
+                    </h3>
+
+                    <h3 class="textoSubtopico">
+                        GTP-U (GPRS Tunneling Protocol - User Plane) encapsula os dados do usuário e os transporta entre a estação-base e o núcleo da rede. Ele funciona como um "túnel" que carrega informações como vídeos, mensagens e navegação com segurança.
+                    </h3>
+
+                    <h3 class="textoSubtopico">
+                        RRC (Radio Resource Control) é responsável por gerenciar a conexão entre o dispositivo e a rede, controlando estados de conexão, mobilidade, segurança e a troca de parâmetros de rádio. 
+                    </h3>
+
+                    <h3 class="textoSubtopico">
+                        PDCP (Packet Data Convergence Protocol) atua na compressão de cabeçalhos, criptografia, verificação de integridade e reorganização de pacotes, garantindo que os dados sejam entregues corretamente mesmo se chegarem fora de ordem.
+                    </h3>
+
+                    <h3 class="textoSubtopico">
+                        RLC (Radio Link Control) complementa esse processo oferecendo retransmissão de pacotes perdidos ou com erro, podendo operar em diferentes modos conforme a necessidade de confiabilidade.
+                    </h3>
+
+                    <h3 class="textoSubtopico">
+                        MAC (Medium Access Control) gerencia o acesso ao meio de transmissão, decidindo quando e como cada usuário pode transmitir dados, além de lidar com multiplexação e controle básico de erros. Juntos, esses protocolos tornam a comunicação pela interface aérea segura, rápida e adequada para ambientes 
+                        com muitos dispositivos e interferências.
+                    </h3>
+
                 </div>
 
                 <div>
@@ -282,7 +327,32 @@
                     <div id="alinhar">
                         <div>
                             <h2 class="tituloSubtopico">2G/3G</h2>
-                            <h3 class="textoSubtopico">MSC, HLR, VLR, SGSN/GGSN</h3>
+                            <h3 class="textoSubtopico">
+                                Na arquitetura de redes móveis, o Core Network (ou núcleo da rede) é responsável por gerenciar as conexões, autenticar usuários, rotear chamadas e dados, e garantir a mobilidade entre diferentes áreas de cobertura. No contexto das redes 2G e 3G, o núcleo é composto 
+                                por diversos componentes que trabalham juntos para oferecer serviços de voz, SMS e dados móveis. Seus principaos elementos são o MSC, HLR, VLR e SGSN/GGSN 
+                            </h3>
+
+                            <h3 class="textoSubtopico">
+                                O MSC (Mobile Switching Center) atua como o centralizador das chamadas de voz. Ele realiza a comutação entre diferentes partes da rede e também se conecta à rede telefônica tradicional (PSTN), permitindo chamadas para e de telefones fixos ou outras operadoras.
+                            </h3>
+
+                            <h3 class="textoSubtopico">
+                                O HLR (Home Location Register) é um banco de dados central que armazena permanentemente informações dos assinantes, como número do telefone, plano de serviço e localização atual.
+                            </h3>
+
+                            <h3 class="textoSubtopico">
+                                O VLR (Visitor Location Register) é um banco de dados temporário, que armazena informações de usuários que estão fora da sua área original, permitindo que eles continuem conectados mesmo em roaming.
+                            </h3>
+
+                            <h3 class="textoSubtopico">
+                                Para o serviço de dados, entram em cena o SGSN (Serving GPRS Support Node) e o GGSN (Gateway GPRS Support Node). O SGSN é responsável por gerenciar as sessões de dados móveis dos usuários dentro da rede, incluindo autenticação e rastreamento da posição. 
+                                Já o GGSN faz a interface entre a rede móvel e a internet ou outras redes de dados, funcionando como uma espécie de "porta de saída".
+                            </h3>
+
+                            <h3 class="textoSubtopico">
+                                Esses componentes foram fundamentais para o funcionamento das redes móveis de segunda e terceira geração, oferecendo suporte a chamadas, mensagens e, progressivamente, à internet móvel com velocidades ainda limitadas.
+                            </h3>
+
                         </div>
 
                         <div>
