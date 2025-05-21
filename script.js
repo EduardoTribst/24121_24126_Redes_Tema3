@@ -20,15 +20,12 @@ function openMenu() {
 
 function mudar(novaPagina){
     
-    if (novaPagina == "Autores"){
-        location.replace("http://127.0.0.1:5500/autores.html")
-    }
-    else if (novaPagina == "Referencias"){
-        location.replace("http://127.0.0.1:5500/referencias.html")
+    if (novaPagina == "Referencias"){
+        location.replace("https://eduardotribst.github.io/24121_24126_Redes_Tema3/referencias.html")
     }
 }
 
 function voltar(){
-    location.replace("http://127.0.0.1:5500/index.html")
+    location.replace("https://eduardotribst.github.io/24121_24126_Redes_Tema3/index.html")
 }
 
